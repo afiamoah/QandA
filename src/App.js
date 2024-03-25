@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import AddNewQuestions from './AddQuestions/NewQuestions';
+import AddNewQuestion from './AddQuestions/AddNewQuestion';
+import { HoldQuestions } from './AddQuestions/NewQuestions';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <AddNewQuestion />
+    <AddNewQuestions />
     </div>
   );
 }
